@@ -7,5 +7,17 @@ websites = [
 ]
 
 statuses = {
-    200: "Website Available"
+    200: "Website Available",
+    301: "Permanent Redirect",
+    302: "Temporary Redirect",
+    404: "Not Found",
+    500: "Internal Server Error",
+    503: "Service Unavailable"
 }
+
+for url in websites:
+    try:
+        webResponse = requests.get(url)
+        print(url, statuses[webResponse.status_code])
+    except:
+        print(url, statuses[webResponse.status_code])
