@@ -1,3 +1,3 @@
 # server-checker
 
-This is meant to be a tool for checking the status and health of a server!
+This is a tool that checks a list of websites to see if they are down.
