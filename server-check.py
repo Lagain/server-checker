@@ -15,6 +15,8 @@ statuses = {
     503: "Service Unavailable"
 }
 
+
+# Loop through websites list and print status codes
 for url in websites:
     try:
         webResponse = requests.get(url)
